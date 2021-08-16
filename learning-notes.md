@@ -182,7 +182,7 @@
 
 ### docker run --links
 - For a full-stack application to work, its many component applications need to work together
-- Each of these components may run in its own docker container. Thus, these containers need to be linked together, using the flag `--link <expected component host>:<container name>`. 
+- Each of these components may run in its own docker container. Thus, these containers need to be linked together, using the flag `--link <container name>:<expected component host>`. 
   - It is vital to always name the container when we execute `docker run` so that we do not have to find the internal IP address of that component container
 - <img src="img/docker-run-links.png" width="80%">
 
